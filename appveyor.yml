@@ -24,9 +24,8 @@ environment:
 install:
   - git submodule update --init
   - appveyor-retry appveyor DownloadFile https://win.rustup.rs/ -FileName rustup-init.exe
-  - rustup-init.exe --default-host x86_64-pc-windows-msvc --default-toolchain nightly -y
+  - rustup-init.exe --default-host "%TARGET%" --default-toolchain nightly -y
   - set PATH=%PATH%;C:\Users\appveyor\.cargo\bin
-  - if NOT "%TARGET%" == "x86_64-pc-windows-msvc" rustup target add %TARGET%
 
   # Use the system msys
   - set PATH=C:\msys64\mingw64\bin;C:\msys64\usr\bin;%PATH%
