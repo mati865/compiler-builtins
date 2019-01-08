@@ -75,6 +75,6 @@ panic = 'abort'
 
 # https://github.com/rust-lang-nursery/compiler-builtins/issues/177
 [target.i686-pc-windows-gnu]
-codegen-units = 1
+rustflags = ["codegen-units = 1"]
 [target.x86_64-pc-windows-gnu]
-codegen-units = 1
+rustflags = ["codegen-units = 1"]
