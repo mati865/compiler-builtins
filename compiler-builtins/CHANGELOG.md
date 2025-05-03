@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.157](https://github.com/mati865/compiler-builtins/compare/compiler_builtins-v0.1.156...compiler_builtins-v0.1.157) - 2025-05-03
+
+### Other
+
+- Resolve `unnecessary_transmutes` lints
+- Warn on `unsafe_op_in_unsafe_fn` by default
+
 ## [0.1.156](https://github.com/rust-lang/compiler-builtins/compare/compiler_builtins-v0.1.155...compiler_builtins-v0.1.156) - 2025-04-21
 
 ### Other
